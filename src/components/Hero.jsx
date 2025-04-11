@@ -17,7 +17,7 @@ const Hero = () => {
 
         {/* Main Heading */}
         <h1 className="text-4xl sm:text-5xl lg:text-8xl font-bold mb-8 md:mb-16 leading-[1.1] tracking-[-0.02em]">
-          Your site should do <br  className='md:block hidden' /> more than look good
+        Fahad <br  className='md:block hidden' /> more than look good
         </h1>
 
         <div className='flex md:flex-row items-center flex-col justify-between gap-8'>

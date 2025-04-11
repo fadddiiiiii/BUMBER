@@ -159,7 +159,7 @@ const Navbar = () => {
               to="/get-started" 
               className="bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700"
             >
-              Get started — it's free
+              Get started
             </Link>
           </div>
 
