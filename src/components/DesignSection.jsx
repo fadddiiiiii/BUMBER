@@ -129,7 +129,7 @@ const DesignSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
         {/* Header Section - Centered */}
         <div className="max-w-4xl mx-auto text-center lg:mb-24 mb-16">
-          <h2 className="text-6xl md:text-7xl font-bold text-white mb-12">
+          <h2 className="text-6xl md:text-7xl font-bold text-white mb-30">
             Why CyberBloom ?
           </h2>
           

@@ -16,10 +16,10 @@ function App() {
     <>
      <Navbar />
      <Hero />
-     <CompanyLogo />
-     <FeaturesSection />
+     {/* <CompanyLogo /> */}
+     {/* <FeaturesSection /> */}
      <DesignSection />
-     <CustomerSection />
+     {/* <CustomerSection /> */}
      <About />
      <TryNow />
      <Footer />
