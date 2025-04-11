@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { HiArrowRight } from "react-icons/hi";
+import customerVideo from '../assets/video.mp4';
+
 
 const features = [
   {
@@ -9,8 +11,7 @@ const features = [
       "I never realized how careless I was online until CyberBloom showed me. Now, checking in before bed is part of my routine — just like brushing my teeth. I actually look forward to the quick questions every night. The design is clean, and the tips are easy to follow.",
     link: "https://help.webflow.com/hc/en-us/articles/34205154436243",
     linkText: "Explore documentation",
-    video:
-      "https://dhygzobemt712.cloudfront.net/Web/home/2024-wxp/features/design-assistant-ai.mp4",
+    video: customerVideo,
     poster:
       "https://cdn.prod.website-files.com/66e88746834b80507cdf7933/6705703132e8c6c85119c96d_design-assistant.avif",
   },
@@ -21,8 +22,7 @@ const features = [
       "Not gonna lie, I downloaded CyberBloom just to check it out... but now it’s part of my nightly routine. It’s lowkey like Duolingo for your online safety chill vibes, clean UI, and the tips actually make sense. I didn’t think something about cybersecurity could feel this ✨aesthetic✨..",
     link: "https://help.webflow.com/hc/articles/34295931022099",
     linkText: "Explore documentation",
-    video:
-      "https://dhygzobemt712.cloudfront.net/Web/home/2024-wxp/features/writing-assistant-square.mp4",
+    video: customerVideo,
     poster:
       "https://cdn.prod.website-files.com/66e88746834b80507cdf7933/67057031236cd506cd0ae632_writing-assistant.avif",
   },
@@ -33,8 +33,7 @@ const features = [
       "CyberBloom helped my team build better digital habits without needing an IT background. We use it in our wellness check-ins at work now. The dashboard is easy to follow, and the gamified features make it a hit with my team — it's a win for culture and security.",
     link: "https://help.webflow.com/hc/articles/34295931022099",
     linkText: "Explore documentation",
-    video:
-      "https://dhygzobemt712.cloudfront.net/Web/home/2024-wxp/features/writing-assistant-square.mp4",
+    video: customerVideo,
     poster:
       "https://cdn.prod.website-files.com/66e88746834b80507cdf7933/67057031236cd506cd0ae632_writing-assistant.avif",
   },
@@ -97,17 +96,22 @@ const About = () => {
           <div>
             <div className="sticky top-24">
               <div className="aspect-square rounded-lg overflow-hidden border border-white/20">
-                <video
-                  key={features[activeFeature].id}
-                  data-feature={features[activeFeature].id}
-                  src={features[activeFeature].video}
-                  poster={features[activeFeature].poster}
-                  className="w-full h-full object-cover"
-                  muted
-                  playsInline
-                  loop
-                  autoPlay
-                />
+              {features.map((feature, index) => (
+  <video
+    key={feature.id}
+    data-feature={feature.id}
+    src={feature.video}
+    poster={feature.poster}
+    className={`w-full h-full object-cover ${
+      index === activeFeature ? "block" : "hidden"
+    }`}
+    muted
+    playsInline
+    loop
+    autoPlay
+  />
+))}
+
               </div>
             </div>
           </div>

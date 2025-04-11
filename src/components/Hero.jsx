@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { HiArrowRight } from 'react-icons/hi';
-import video from '../assets/banner-video.mp4';
+import video from '../assets/banner-video.mov';
 import bannerLeft from '../assets/banner-left.avif';
 import bannerRight from '../assets/banner-right.png';
 const Hero = () => {
@@ -9,16 +9,10 @@ const Hero = () => {
     <div className="bg-black text-white md:pt-5 pt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-9  pb-16 relative">
         {/* video */}
-        <div className='w-full h-full mt-16 relative'>
+        <div className='w-full h-full mt-20 relative'>
           <video src={video} autoPlay muted loop className='w-full h-full object-cover' />
 
-          <div className='absolute top-1/2 xl:-left-20 md:-left-0 z-20 xl:block hidden'>
-            <img src={bannerLeft} alt="" className='lg:h-32 md:h-24 h-20 w-full object-cover'/>    
-          </div>
-
-          <div className='absolute bottom-1/5 xl:-right-20 md:-right-0 z-20 xl:block hidden'>
-            <img src={bannerRight} alt="" className='lg:h-44 md:h-32 h-28 w-full object-cover'/>
-          </div>
+          
         </div>
 
         {/* CTA Buttons */}
