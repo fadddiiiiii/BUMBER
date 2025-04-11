@@ -6,29 +6,8 @@ import bannerLeft from '../assets/banner-left.avif';
 import bannerRight from '../assets/banner-right.png';
 const Hero = () => {
   return (
-    <div className="bg-black text-white md:pt-32 pt-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 relative">
-        {/* Subtitle */}
-        <div className="mb-6">
-          <span className="text-[#999999] uppercase tracking-[0.2em] text-sm font-medium">
-             NC IS MORE THAN A WEBSITE BUILDER
-          </span>
-        </div>
-
-        {/* Main Heading */}
-        <h1 className="text-4xl sm:text-5xl lg:text-8xl font-bold mb-8 md:mb-16 leading-[1.1] tracking-[-0.02em]">
-        Fahad <br  className='md:block hidden' /> 
-        </h1>
-
-        <div className='flex md:flex-row items-center flex-col justify-between gap-8'>
-            {/* Description */}
-        <p className="text-[#999999] md:text-xl mb-8 md:mb-0 leading-relaxed">
-          As the first-ever website experience platform, CodeTutor lets marketers, designers, and developers 
-          come together to build, manage, and optimize web experiences that get results.
-        </p>
-        </div>
-
-
+    <div className="bg-black text-white md:pt-5 pt-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-9  pb-16 relative">
         {/* video */}
         <div className='w-full h-full mt-16 relative'>
           <video src={video} autoPlay muted loop className='w-full h-full object-cover' />
@@ -45,12 +24,14 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex justify-center items-center ">
         <div className="flex sm:flex-row flex-wrap gap-8 shrink-0">
-       <Link
-        to="/start-building"
-        className="bg-[#4353FF] hover:bg-[#3544CC] text-white px-8 py-4 rounded text-lg font-medium transition-colors duration-200"
-            >
-          JOIN NOW
-         </Link>
+        <Link
+  to="/start-building"
+  className="relative inline-block px-10 py-6 mt-16 text-lg font-bold text-white text-center transition-transform duration-300 ease-in-out transform bg-gradient-to-br from-green-400 to-blue-600 rounded-lg shadow-md hover:scale-105 hover:bg-gradient-to-bl hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 overflow-hidden group"
+>
+  <span className="absolute inset-0 w-full h-full transition-opacity duration-300 bg-white opacity-0 group-hover:opacity-10"></span>
+  <span className="relative text-xl z-10">JOIN NOW</span>
+</Link>
+
   </div>
 </div>
         {/* overlay */}

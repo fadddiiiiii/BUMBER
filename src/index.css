@@ -3,3 +3,6 @@
 @theme{
     --color-primary: #080806;
 }
+body {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font globally */
+  }

@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-xl font-mono">
+            <Link to="/" className="text-3xl font-mono">
               <span className='text-blue-300'>CyberBloom</span> 
             </Link>
           </div>

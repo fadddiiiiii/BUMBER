@@ -6,8 +6,8 @@ import { BsPlayFill, BsPauseFill } from 'react-icons/bs';
 const tabsData = [
   {
     id: 'tab1',
-    title: 'Design without limits',
-    subtitle: 'CodeTutor puts the power of code into a visual canvas so every team can create stunning websites quickly — and extend the power of their work with custom code.',
+    title: 'Mental Wellbeing & Screen Balance',
+    subtitle: 'Understand how your screen time affects your mood, focus, and energy — and get gentle nudges to restore balance when it’s needed most.',
     video: 'https://dhygzobemt712.cloudfront.net/Web/home/2024-wxp/features/design.mp4',
     poster: 'https://cdn.prod.website-files.com/66e88746834b80507cdf7933/670570322cf4b274d716fed4_design-without-limits.avif',
     cta: {
@@ -17,8 +17,8 @@ const tabsData = [
   },
   {
     id: 'tab2',
-    title: 'Create complex, rich interactions',
-    subtitle: 'Design scroll-based and multi-step interactions and animations and easily work with GSAP, Spline, 3D, Lottie, and Rive — all without even thinking about code.',
+    title: 'Privacy & Data Safety',
+    subtitle: 'Learn how to keep your digital footprint safe. From smart tips to friendly reminders, we help you protect what matters without the stress.',
     video: 'https://dhygzobemt712.cloudfront.net/Web/home/2024-wxp/features/complex-rich-animations.mp4',
     poster: 'https://cdn.prod.website-files.com/66e88746834b80507cdf7933/67057032ad30932a68cd9d18_animations.avif',
     cta: {
@@ -28,8 +28,8 @@ const tabsData = [
   },
   {
     id: 'tab3',
-    title: 'Empower everyone to build on-brand sites',
-    subtitle: 'Give less technical teams the tools they need to build confidently with reusable design systems powered by variables, components, and libraries.',
+    title: 'Online Social Dynamics',
+    subtitle: 'Reflect on your social media habits, interactions, and emotional triggers. CyberBloom helps you stay kind, connected, and in control.',
     video: 'https://dhygzobemt712.cloudfront.net/Web/home/2024-wxp/features/build-on-brand-sites.mp4',
     poster: 'https://cdn.prod.website-files.com/66e88746834b80507cdf7933/67058d52036e5522e27966de_build-on-brand.avif',
     cta: {
@@ -39,8 +39,8 @@ const tabsData = [
   },
   {
     id: 'tab4',
-    title: 'Create even faster with the CodeTutor AI Assistant',
-    subtitle: "CodeTutor's AI Assistant lets you build faster and more efficiently by applying your site's existing design system to new page sections.",
+    title: 'Willingness to Improve',
+    subtitle: "Progress starts with awareness. Track your habits, set gentle goals, and celebrate the small wins — one mindful choice at a time.",
     video: 'https://dhygzobemt712.cloudfront.net/Web/home/2024-wxp/features/webflow-ai-assistant.mp4',
     poster: 'https://cdn.prod.website-files.com/66e88746834b80507cdf7933/670570323f08ce0aed3368e4_ai-assistant.avif',
     cta: {
@@ -61,10 +61,7 @@ const DesignSection = () => {
   const UPDATE_INTERVAL = 100; // Update progress every 100ms
   
   const cyberBloomText = [
-    "In today's fast-paced digital world, staying safe online is just as important as staying healthy offline.",
-    "CyberBloom helps you build better digital habits by combining cyber hygiene with digital wellness — all in one calm, intuitive space.",
-    "With daily check-ins, smart suggestions, mindful usage reminders, and a personal progress tracker, CyberBloom makes online safety feel simple, rewarding, and human.",
-    "Whether you're a student, a remote worker, or just someone who wants to feel more in control online — this is your space to grow."
+    "Let’s be real. In a world where we’re constantly online, taking care of our digital well-being is just as important as drinking water or getting good sleep. That’s where CyberBloom comes in — your cozy little corner of the internet designed to help you thrive, not just survive. It’s not just about safety (although we’ve got you covered there too); it’s about feeling good while being online. With daily check-ins that feel like a friendly nudge, smart suggestions that actually make sense, mindful reminders that don’t guilt trip you, and a super chill progress tracker, CyberBloom helps you bloom into your best digital self. Whether you’re doomscrolling at 2 AM (we’ve all been there), trying to focus while working from home, or just looking to vibe better with your screen time, CyberBloom makes it fun, easy, and totally doable. Because online life should lift you up, not wear you down."
   ];
 
   useEffect(() => {
@@ -125,11 +122,11 @@ const DesignSection = () => {
   };
 
   return (
-    <section className="overflow-hidden py-24 bg-black">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
+    <section className="overflow-hidden py-6 bg-black">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-16">
         {/* Header Section - Centered */}
-        <div className="max-w-4xl mx-auto text-center lg:mb-24 mb-16">
-          <h2 className="text-6xl md:text-7xl font-bold text-white mb-30">
+        <div className="max-w-4xl mx-auto text-center lg:mb-24 mb-10">
+          <h2 className="text-6xl md:text-7xl font-bold text-white mb-20">
             Why CyberBloom ?
           </h2>
           
@@ -151,14 +148,14 @@ const DesignSection = () => {
         </div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="flex flex-col justify-between gap-16">
+        <div className="grid grid-cols-2 lg:grid-cols-2 gap-12">
+          <div className="flex flex-col justify-between gap-10">
             {/* Tabs Section */}
-            <div className="space-y-6">
+            <div className="space-y-10">
               {tabsData.map((tab) => (
                 <div
                   key={tab.id}
-                  className="relative pl-4 cursor-pointer"
+                  className="relative pl-6 cursor-pointer"
                   onClick={() => handleTabClick(tab.id)}
                 >
                   {/* Progress bar */}
@@ -171,7 +168,7 @@ const DesignSection = () => {
                     )}
                   </div>
 
-                  <h3 className="text-xl font-semibold text-white mb-2">
+                  <h3 className="text-3xl font-semibold text-white mb-2">
                     {tab.title}
                   </h3>
                   <p className={`text-gray-400 transition-all duration-300 ${
