@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex justify-center items-center w-full h-screen">
+        <div className="flex justify-center items-center ">
         <div className="flex sm:flex-row flex-wrap gap-8 shrink-0">
        <Link
         to="/start-building"

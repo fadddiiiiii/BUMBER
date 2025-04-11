@@ -4,9 +4,9 @@ import { HiArrowRight } from "react-icons/hi";
 const features = [
   {
     id: "ai-1",
-    title: "Generate styled content quickly",
+    title: "Kavinayaa",
     description:
-      "Whether you're trying to build even faster or you're just new to codeTutor, you can use AI Assistant to generate new page sections using your site's existing design system.",
+      "I never realized how careless I was online until CyberBloom showed me. Now, checking in before bed is part of my routine — just like brushing my teeth. I actually look forward to the quick questions every night. The design is clean, and the tips are easy to follow.",
     link: "https://help.webflow.com/hc/en-us/articles/34205154436243",
     linkText: "Explore documentation",
     video:
@@ -16,9 +16,9 @@ const features = [
   },
   {
     id: "ai-2",
-    title: "Generate text right within codetutor",
+    title: "Jhalak",
     description:
-      "Quickly and easily create new content, natively within CodeTutor. From generating first-pass content to publishing at speed, the AI Assistant can help you develop variations with just a few clicks.",
+      "Not gonna lie, I downloaded CyberBloom just to check it out... but now it’s part of my nightly routine. It’s lowkey like Duolingo for your online safety chill vibes, clean UI, and the tips actually make sense. I didn’t think something about cybersecurity could feel this ✨aesthetic✨..",
     link: "https://help.webflow.com/hc/articles/34295931022099",
     linkText: "Explore documentation",
     video:
@@ -28,9 +28,9 @@ const features = [
   },
   {
     id: "ai-3",
-    title: "Generate text right within CodeTutor",
+    title: "Aniruth",
     description:
-      "Quickly and easily create new content, natively within codetutor. From generating first-pass content to publishing at speed, the AI Assistant can help you develop variations with just a few clicks.",
+      "CyberBloom helped my team build better digital habits without needing an IT background. We use it in our wellness check-ins at work now. The dashboard is easy to follow, and the gamified features make it a hit with my team — it's a win for culture and security.",
     link: "https://help.webflow.com/hc/articles/34295931022099",
     linkText: "Explore documentation",
     video:
@@ -85,25 +85,10 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-32  gap-8">
           <div className="md:mb-24">
             <h2 className="text-5xl md:text-7xl font-bold mb-8 max-w-[50rem]">
-              AI at CodeTutor
+              Testimonials
             </h2>
           </div>
           <div className="mb-24">
-            <p className="text-xl text-gray-300 mb-8 max-w-[35rem]">
-              Write, edit, and update content — or generate it with the help of
-              AI — directly in CodeTutor, then publish with a click.Easily
-              create page layouts by adding the elements you want and pulling in
-              content from the CMS. Plus create reusable templates for dynamic
-              content — design the layout once and any new content will
-              automatically follow it.
-            </p>
-            <a
-              href="https://webflow.com/ai"
-              className="inline-flex items-center text-white hover:text-gray-300 text-lg font-medium transition-colors"
-            >
-              Discover AI at CodeTutor
-              <HiArrowRight className="ml-2 w-5 h-5" />
-            </a>
           </div>
         </div>
 
@@ -133,21 +118,14 @@ const About = () => {
             <div className="md:mb-28 mb-16 md:h-72 border-b border-white/10 pb-16">
               <div className="max-w-[35ch] mb-4">
                 <h3 className="text-2xl font-semibold">
-                  Generate styled content quickly
+                  Harita
                 </h3>
               </div>
               <p className="text-xl text-gray-300 mb-8 max-w-[35rem]">
-                codetutor's AI tools elevate your web projects through
-                contextual design and writing help, machine-powered translation,
-                and more.
+              I never realized how careless I was online until CyberBloom showed me. Now, checking in before bed is part of my routine  just like brushing my teeth. I actually look forward to the quick questions every night. The design is clean, and the tips are easy to follow.”
+
               </p>
-              <a
-                href="https://webflow.com/ai"
-                className="inline-flex items-center text-white hover:text-gray-300 text-lg font-medium transition-colors"
-              >
-                Discover AI at CodeTutor
-                <HiArrowRight className="ml-2 w-5 h-5" />
-              </a>
+            
             </div>
 
             {/* Features List */}
@@ -164,13 +142,7 @@ const About = () => {
                   <p className="text-xl text-gray-300 mb-8 max-w-[35rem]">
                     {feature.description}
                   </p>
-                  <a
-                    href="https://webflow.com/ai"
-                    className="inline-flex items-center text-white hover:text-gray-300 text-lg font-medium transition-colors"
-                  >
-                    Discover AI at CodeTutor
-                    <HiArrowRight className="ml-2 w-5 h-5" />
-                  </a>
+                
                 </div>
               ))}
             </div>

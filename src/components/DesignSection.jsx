@@ -127,14 +127,14 @@ const DesignSection = () => {
   return (
     <section className="overflow-hidden py-24 bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
-        {/* Header Section */}
-        <div className="max-w-[50rem] lg:mb-24 mb-16">
-          <h2 className="text-6xl md:text-7xl font-bold text-white mb-8">
-            Why CyberBloom
+        {/* Header Section - Centered */}
+        <div className="max-w-4xl mx-auto text-center lg:mb-24 mb-16">
+          <h2 className="text-6xl md:text-7xl font-bold text-white mb-12">
+            Why CyberBloom ?
           </h2>
           
-          {/* Animated highlight paragraph */}
-          <div className="space-y-4">
+          {/* Animated highlight paragraph with improved spacing - centered */}
+          <div className="space-y-6 mt-8">
             {cyberBloomText.map((text, index) => (
               <p 
                 key={index}
@@ -153,20 +153,6 @@ const DesignSection = () => {
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="flex flex-col justify-between gap-16">
-            {/* CTA section */}
-            <div>
-              <p className="text-2xl text-gray-300">
-                Rethink the web dev cycle with CodeTutor. Give your design and marketing teams the power to launch sophisticated sites quickly — so your dev team can focus on more complex work, not pixel-perfect revisions.
-              </p>
-              <Link 
-                to="/dashboard/signup"
-                className="inline-flex items-center px-8 py-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors mt-8"
-              >
-                Get started
-                <span className="font-normal ml-1">— it's free</span>
-              </Link>
-            </div>
-
             {/* Tabs Section */}
             <div className="space-y-6">
               {tabsData.map((tab) => (
@@ -196,12 +182,11 @@ const DesignSection = () => {
                 </div>
               ))}
             </div>
-          </div>        
+          </div>
         </div>
       </div>
     </section>
   );
 };
-
 
 export default DesignSection;
