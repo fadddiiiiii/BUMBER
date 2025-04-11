@@ -17,7 +17,7 @@ const Hero = () => {
 
         {/* Main Heading */}
         <h1 className="text-4xl sm:text-5xl lg:text-8xl font-bold mb-8 md:mb-16 leading-[1.1] tracking-[-0.02em]">
-        Fahad <br  className='md:block hidden' /> more than look good
+        Fahad <br  className='md:block hidden' /> 
         </h1>
 
         <div className='flex md:flex-row items-center flex-col justify-between gap-8'>
@@ -26,23 +26,6 @@ const Hero = () => {
           As the first-ever website experience platform, CodeTutor lets marketers, designers, and developers 
           come together to build, manage, and optimize web experiences that get results.
         </p>
-
-        {/* CTA Buttons */}
-        <div className="flex sm:flex-row flex-wrap gap-8 shrink-0">
-          <Link
-            to="/start-building"
-            className="bg-[#4353FF] hover:bg-[#3544CC] text-white px-8 py-4 rounded text-lg font-medium transition-colors duration-200"
-          >
-            Start building
-          </Link>
-          <Link
-            to="/contact-sales"
-            className="group flex items-center text-white hover:text-[#999999] transition-colors duration-200 text-lg font-medium"
-          >
-            Contact sales
-            <HiArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-          </Link>
-        </div>
         </div>
 
 
@@ -59,8 +42,19 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* CTA Buttons */}
+        <div className="flex justify-center items-center w-full h-screen">
+        <div className="flex sm:flex-row flex-wrap gap-8 shrink-0">
+       <Link
+        to="/start-building"
+        className="bg-[#4353FF] hover:bg-[#3544CC] text-white px-8 py-4 rounded text-lg font-medium transition-colors duration-200"
+            >
+          JOIN NOW
+         </Link>
+  </div>
+</div>
         {/* overlay */}
-        <div className='absolute bottom-0 left-0 right-0 h-1/2 z-10 bg-gradient-to-t from-black to-transparent hidden md:block'></div>
+        {/* <div className='absolute bottom-0 left-0 right-0 h-1/2 z-10 bg-gradient-to-t from-black to-transparent hidden md:block'></div> */}
       </div>
     </div>
   );

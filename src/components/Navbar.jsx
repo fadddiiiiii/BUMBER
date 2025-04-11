@@ -68,12 +68,12 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black fixed top-0 left-0 right-0 z-50 text-white border-b border-white/10">
-      <div className="container mx-auto px-4 py-2  sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-4 py-2 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-xl font-bold">
-              <span className='text-blue-500'>CodeTutor</span> UI
+            <Link to="/" className="text-xl font-mono">
+              <span className='text-blue-300'>CyberBloom</span> 
             </Link>
           </div>
 
@@ -147,29 +147,25 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-            <Link to="/enterprise" className="hover:text-gray-300">Enterprise</Link>
-            <Link to="/pricing" className="hover:text-gray-300">Pricing</Link>
+            {/* <Link to="/enterprise" className="hover:text-gray-300">Enterprise</Link> */}
+            {/* <Link to="/pricing" className="hover:text-gray-300">Pricing</Link> */}
           </div>
 
           {/* Auth Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Link to="/login" className="hover:text-gray-300 hidden xl:block">Log in</Link>
-            <Link to="/contact-sales" className="hover:text-gray-300 hidden xl:block">Contact sales</Link>
-            <Link 
-              to="/get-started" 
-              className="bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700"
-            >
-              Get started
-            </Link>
-          </div>
+          {/* <div className="hidden md:flex items-center space-x-4">
+            <img 
+              src="/assets/navigation-bar.png"
+              className="h-8" 
+            />
+          </div>   */}
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button - Only visible on mobile */}
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md hover:text-gray-300 hover:bg-gray-700"
+              aria-label="Toggle menu"
             >
-              <span className="sr-only">Open main menu</span>
               {!isMenuOpen ? (
                 <MdMenu className="block h-6 w-6" />
               ) : (
@@ -180,9 +176,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Only visible on mobile */}
       {isMenuOpen && (
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {Object.keys(menuItems).map((key) => (
               <div key={key} className="space-y-2">
