@@ -11,7 +11,7 @@ const Hero = () => {
         {/* Subtitle */}
         <div className="mb-6">
           <span className="text-[#999999] uppercase tracking-[0.2em] text-sm font-medium">
-            MORE THAN A WEBSITE BUILDER
+             NC IS MORE THAN A WEBSITE BUILDER
           </span>
         </div>
 
