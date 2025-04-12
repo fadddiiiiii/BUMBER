@@ -22,8 +22,10 @@ const Hero = () => {
   to="/start-building"
   className="relative inline-block px-10 py-6 mt-16 text-lg font-bold text-white text-center transition-transform duration-300 ease-in-out transform bg-gradient-to-br from-green-400 to-blue-600 rounded-lg shadow-md hover:scale-105 hover:bg-gradient-to-bl hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 overflow-hidden group"
 >
+  <a href="https://signup-topaz-eight.vercel.app" target="_blank" rel="noopener noreferrer">
   <span className="absolute inset-0 w-full h-full transition-opacity duration-300 bg-white opacity-0 group-hover:opacity-10"></span>
   <span className="relative text-xl z-10">JOIN NOW</span>
+  </a>
 </Link>
 
   </div>

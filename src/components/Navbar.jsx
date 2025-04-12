@@ -23,12 +23,14 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-4">
             
-            <Link
-              to="/get-started"
+            <a
+              href="https://signup-topaz-eight.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               className="ml-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-sm font-medium"
             >
               SIGN IN
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
